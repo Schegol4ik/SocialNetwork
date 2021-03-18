@@ -3,7 +3,7 @@ const UPDATE_NEW_POST_TEXT = 'UPDATE-NEW-POST-TEXT';
 
 let initialState = {
     posts: [
-        {id: 1, namepost: "Hello world!", likeCount: 15},
+        {id: 1, namepost: "Hello worlds!", likeCount: 15},
         {id: 2, namepost: "It's my first app!", likeCount: 11},
         {id: 3, namepost: "Сверху гомики", likeCount: 2},
     ],
