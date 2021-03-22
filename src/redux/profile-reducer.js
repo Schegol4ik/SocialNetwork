@@ -7,7 +7,7 @@ let initialState = {
         {id: 2, namepost: "It's my first app!", likeCount: 11},
         {id: 3, namepost: "Сверху гомики", likeCount: 2},
     ],
-    newPostText: ' '
+    newPostText: ''
 }
 
 const profileReducer = (state = initialState, action) => {
@@ -20,7 +20,7 @@ const profileReducer = (state = initialState, action) => {
         }
 
         case ADD_POST: {
-            let newPost = state.newPostText
+            /*let newPost = state.newPostText*/
             return {
                 ...state,
                 newPostText: ' ',
