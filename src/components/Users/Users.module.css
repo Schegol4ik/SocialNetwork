@@ -4,5 +4,7 @@
 }
 
 .selectStyle {
+    cursor: pointer;
+    padding: 4px;
     font-weight: bold;
 }
