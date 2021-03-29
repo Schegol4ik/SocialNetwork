@@ -1,6 +1,5 @@
 import logo from './logo.svg';
 import './App.css';
-import Header from './components/header/Headercomp';
 import Navbar from "./components/navbar/Navbar";
 import React from "react";
 import {Route} from "react-router-dom";
@@ -10,12 +9,13 @@ import Settings from "./components/Settings/Settings";
 import DialogsContainer from "./components/dialogs/DialogsContainer";
 import UsersContainer from "./components/Users/UsersContainer";
 import ProfileContainer from "./components/cprofile/CprofileContainer";
+import HeaderCompContainer from "./components/header/HeadercompContainer";
 
 
 const App = (props) => {
     return (
         <div className='app-wrapper'>
-            <Header/>
+            <HeaderCompContainer/>
             <Navbar /*state={props.state.sideBar}*//>
             <div className='app-wrapper-content'>
                 <Route path='/dialogs' render={() => <DialogsContainer />}/>
