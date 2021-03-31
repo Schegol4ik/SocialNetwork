@@ -16,6 +16,19 @@ export const UserAPI = {
             .then(response => {
                 return response.data
             })
-    }
-
-}
+    },
+    controlFollowed: {
+        getFollow (userId){
+            return instance.post(`follow/${userId}`)
+        },
+        getUnfollow(userId){
+            return instance.delete(`follow/${userId}`)
+        }
+    },
+    getData(){
+       return instance.get(`auth/me`)/*.then(response => {
+                if (response.data.resultCode === 0) {
+                let {id, email, login} = response.data.data
+            }
+        });*/
+}}
