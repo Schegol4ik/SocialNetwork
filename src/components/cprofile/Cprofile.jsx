@@ -1,13 +1,16 @@
 import React from 'react';
 import './MyPosts/Myposts.jsx'
 import s from './Cprofile.module.css';
-import MyPost from "./MyPosts/Myposts";
 import DisInfo from "./Discription/DiscriptionInfo";
 import MyPostContainer from "./MyPosts/MypostsContainer";
+import {Redirect} from "react-router-dom";
+
+
+
+
 
 const Profile = (props) => {
     return (
-
         <div>
             <div>
                 <DisInfo profile={props.profile}/>

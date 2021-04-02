@@ -10,15 +10,17 @@ import DialogsContainer from "./components/dialogs/DialogsContainer";
 import UsersContainer from "./components/Users/UsersContainer";
 import ProfileContainer from "./components/cprofile/CprofileContainer";
 import HeaderCompContainer from "./components/header/HeadercompContainer";
+import Login from "./components/Login/Login";
 
 
 const App = (props) => {
     return (
         <div className='app-wrapper'>
             <HeaderCompContainer/>
-            <Navbar /*state={props.state.sideBar}*//>
+            <Navbar />
             <div className='app-wrapper-content'>
                 <Route path='/dialogs' render={() => <DialogsContainer />}/>
+                <Route path='/login' render={() => <Login />}/>
                 <Route path='/profile/:userId?' render={() => <ProfileContainer />}/>
                 <Route path='/news' render={() => <News/>}/>
                 <Route path='/music' render={() => <Music/>}/>

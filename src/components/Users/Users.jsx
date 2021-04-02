@@ -1,7 +1,7 @@
 import React from 'react'
 import s from "./Users.module.css";
 import userPhoto from "../../assets/images/users.png";
-import {NavLink} from "react-router-dom";
+import {NavLink, Redirect} from "react-router-dom";
 import * as axios from "axios";
 import {UserAPI} from "../../api/api";
 import {toggleIsFollowing} from "../../redux/users-reducer";
@@ -14,6 +14,8 @@ let Users = (props) => {
     for (let i = 1; i <= pagesCount; i++) {
         pages.push(i)
     }
+
+
 
     return <div>
         {pages.map(p => {
