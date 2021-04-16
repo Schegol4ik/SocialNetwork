@@ -13,7 +13,7 @@ const Profile = (props) => {
     return (
         <div>
             <div>
-                <DisInfo profile={props.profile}/>
+                <DisInfo profile={props.profile} status={props.status} updateStatus={props.updateStatus}/>
             </div>
             <div>
                 <MyPostContainer  />
